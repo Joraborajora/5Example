@@ -133,6 +133,7 @@ h1{
     padding: 20px 40px;
     border-radius: 30px;
     letter-spacing: 2.5px;
+    transition: .3s;
 }
 
 .btn-primary:hover {
@@ -152,6 +153,7 @@ h1{
     padding: 20px 40px;
     border-radius: 30px;
     letter-spacing: 2.5px;
+    transition: .3s;
 }
 
 .btn-secondary:hover {
@@ -169,6 +171,7 @@ h1{
     padding: 20px 40px;
     border-radius: 30px;
     text-transform: uppercase;
+    transition: .3s;
 }
 
 .btn-info:hover {
@@ -254,7 +257,12 @@ h1{
     "e h h";
     max-width: 1110px;
     margin: 0 auto;
-    
+    grid-gap:35px;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+
+
 }
 
 .grid-title{
@@ -290,11 +298,22 @@ h1{
 }
 
 
+.grid-name {
+    font-size: 14px;
+    color:#1085e4;
+}
+.grid-name span{
+    font-size: 16px;
+    font-weight: 700;
+    color:#192b59;
+}
+
 
 .grid h2{
     font-size: 40px;
     color: #192b59;
     font-weight: 700;
+    margin-top: 0;
 }
 
 .grid h2 span {
@@ -305,7 +324,9 @@ h1{
 
 .grid-item{
     text-align: center;
-    box-shadow: 0 0 5px #f0f0f0;
+    box-shadow: 0 9px 20px #f0f0f0;
+    border-radius: 10px;
+    padding: 40px 29px 64px;
 }
 
 .grid-item h3{
@@ -326,6 +347,8 @@ h1{
     background-repeat: no-repeat;
     display: block;
     margin: 0 auto 36px;
+    height: 92px;
+    background-position: center;
 }
 
 .grid-icon-1 {
@@ -366,8 +389,54 @@ h1{
     height: 87px;
 }
 
+.page-software-icon{
+    background-image: url(../img/software-icon.png);
+    display: block;
+    width: 117px;
+    height: 98px;
+    background-repeat: no-repeat;
+    background-position: -28px 0;
 
+}
 
+.page-software .title-h2{
+    max-width: 766px;
+    margin-top: 12px;
+    margin-bottom: 26px;
+}
+
+.page-software-flex {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.page-software-flex>div {
+  
+        flex-basis: 55%;
+}
+
+.page-software-list {
+    margin-top: 30px;
+    height: 323px;
+    overflow: hidden;
+    overflow-y: scroll;
+
+}
+
+.page-software-list dt{
+    font-weight: 700;
+    color: #5a6789;
+    margin-bottom: 10px;
+}
+
+.page-software-list dd{
+    margin-left: 0;
+    margin-bottom: 50px;
+    font-size: 14px;
+    line-height: 1.8;
+
+}
 
 
 
@@ -591,6 +660,10 @@ h1{
     padding: 116px 0 0 0;
 }
 
+.page-grid {
+    padding: 134px 0 118px 0;
+}
+
 /* CSSMATIC GRADIENT */
 
 .page-subscribe {
@@ -606,5 +679,10 @@ h1{
     color: #fff;
     padding: 25px 0 28px 0;
 
+}
+
+
+.page-software {
+    padding: 109px 0 156px 0;
 }
 
