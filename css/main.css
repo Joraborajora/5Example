@@ -618,8 +618,14 @@ h1{
 
 
 
-.page-clients .title-40 {
+.page-clients .title-40,
+.page-team .title-40 {
     color: #fff;
+}
+
+.page-clients .title-40 span,
+.page-team .title-40 span{
+    color: #85c8ff;
 }
 
 
@@ -818,6 +824,155 @@ h1{
 
 
 
+.box-team {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 140px;
+}
+
+
+.box-team-item {
+    background-color: #fff;
+    flex-basis: 31.5%;
+    box-shadow: 0 5px 6px #f4f4f4;
+    position: relative;
+    padding: 193px 31px 42px 31px ;
+}
+
+.box-team-item .avatar {
+    position: absolute;
+    top: -86px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    max-width: 288px;
+    width: 100%;
+
+
+}
+
+.box-team-item .position {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #1a88e1;
+    font-weight: 900;
+    margin-bottom: 0;
+    letter-spacing: 2.1px;
+
+}
+
+.box-team-item .name {
+    font-size: 26px;
+    color: #192b59;
+    font-weight: 600;
+    margin-top: 8px;
+    letter-spacing: -0.9px;
+}
+
+.box-team-item .btn-team span {
+    background-image: url(../img/btn-team.png);
+    background-repeat: no-repeat;
+    display: block;
+    margin: 0 auto;
+    align-self: center;
+}
+
+.box-team-item .btn-more span {
+    background-position: -5px -5px;
+    width: 20px;
+    height: 20px;
+
+
+}
+
+.box-team-item .btn-more:focus {
+    outline: none;
+}
+
+.box-team-item .btn-more:hover span {
+
+}
+
+
+.box-team-item .btn-team{
+    background-color: #f3f3f3;
+    border-radius: 100%;
+    
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    transition: 0.3s;
+    border: none;
+    padding: 0;
+    display: flex;
+
+}
+
+
+.box-team-item .btn-team:hover {
+    background-color: #1a88e1;
+}
+
+.box-team-item .btn-more:hover span {
+    background-position: -4px -30px;
+}
+
+
+.social-team {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+
+.box-team-item .btn-fb span {
+    background-position: -32px -5px;
+    width: 20px;
+    height: 20px;
+}
+
+.box-team-item .btn-fb:hover span{
+    background-position: -32px -29px;
+}
+
+.box-team-item .btn-tw span {
+    background-position: -52px -5px;
+    width: 20px;
+    height: 20px;
+}
+
+
+.box-team-item .btn-tw:hover span{
+    background-position: -52px -29px;
+}
+
+
+.box-team-item .btn-be span {
+    background-position: -80px -5px;
+    width: 20px;
+    height: 20px;
+}
+
+
+.box-team-item .btn-be:hover span{
+    background-position: -82px -29px;
+
+}
+
+.box-team-item .btn-web span {
+    background-position: -105px -5px;
+    width: 20px;
+    height: 20px;
+}
+
+
+.box-team-item .btn-web:hover span{
+    background-position: -105px -29px;
+
+}
+
 /* PAGE */
 
 .page-header {
@@ -850,7 +1005,9 @@ h1{
     padding: 116px 0 96px 0;
 }
 
-
+.page-plan{
+    padding: 81px 0 121px 0;
+}
 
 .page-plan,
 .page-screen{
@@ -945,3 +1102,11 @@ h1{
 
 }
 
+
+.page-team {
+    text-align: center;
+    background-image: url(../img/bg-team.png);
+    background-repeat: no-repeat;
+    background-position:  center;
+    padding: 82px 0 20px 0;
+}
